@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ghanaian Day Name</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>What's your Ghanaian Day Name?</h2>
+    <form action="">
+    <div class="info name-profile">
+      <input type="text" id="person-name" placeholder="What's your name?">
+    </div>
+    
+    <div class="info div birth-date-profile">
+      <label for="">What's your date of birth?</label>
+      <input type="date" id="birth-date">
+    </div>
+  
+    <div class="info gender-profile">
+      <label for="">What's your Gender?</label>
+      <label for="">Male</label>
+      <input type="radio" name="gender" id="gender" value="male">
+      <label for="">Female</label>
+      <input type="radio" name="gender" id="gender" value="female">
+    </div>
+    </form>
+    
+    <button type="submit" onclick="printInfo()">Submit</button>
+
+    <p><a href="https://hadithi.africa/the-ghanaian-tradition-of-day-names-and-everything-you-need-to-know-about-it/">Click here for more info</a></p>
+    
+    <div class="info-display" id="info-part">
+      <div class="person-info">
+      <p class="details"></p>
+      <p>Hi! <span id="main-name"></span></p>
+      <p>Your Ghanaian name is <span id="main-day-name"></span></p>
+      <p>Which simply means a boy born on a <span id="main-dayofweek"></span></p>
+      <p>Other variations include Kobi etc</p>
+      </div>
+      <div class="info-graphic">
+        <h3>Here is an info graphic about <span id="image-name"></span></h3>
+
+
+        <img id="info-image">
+      </div>
+
+
+    </div>
+
+  </div>
+  <script src="name-script.js"></script>
+</body>
+</html>
